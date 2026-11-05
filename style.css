@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --cor0: rgb(179, 227, 247);
+    --cor1: #023BE6;
+    --cor2: #0231BD;
+    --cor3: #01258F;
+    --cor4: #011C6B;
+    --cor5: #011142;
+    --cor6: red;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-principal: 'Bitcount Ink', sans-serif;
+    --font-do-header-h1: 'Bebas Neue', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+}
+
+.interno{
+    background-color: var(--cor0);
+}
+
+.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-family: var(--font-do-header-h1);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.295);
+    margin-bottom: 10px;
+}
+
+header p{
+    padding-top: 50px;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 14px;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    flex-shrink: 1;
+    white-space: nowrap;
+}
+
+nav a:hover{
+    color: white;
+    background-color: var(--cor1);
+}
+
+span{
+    color: var(--cor1);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a.active {
+    pointer-events: none;
+    cursor: default;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 700px;
+    box-shadow: 10px 10px 10px rgba(135, 170, 185, 0.527);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main2{
+    background-color: white;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.main3{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main3 a{
+    text-decoration: none;
+}
+
+main h1{
+    text-align: center;
+    font-family: var(--font-principal);
+}
+
+main h2{
+    text-align: center;
+    font-size:  1.8em;
+    font-family: var(--font-principal);
+}
+
+.p2 h2{
+    font-family: var(--font-padrao);
+    color: var(--cor3);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main img{
+    margin-right: 7px;
+}
+
+main .img1{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.p2 img{
+    width: auto;
+}
+
+ul{
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    list-style-position: inside;
+}
+
+div{
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(208, 224, 231);
+    border: 1px solid  var(--cor1);
+    text-align: left;
+    min-width: 200px;
+    width: 200px;   
+    padding: 10px;
+    margin-top: 20px;
+    margin: 15px;
+    box-sizing: border-box;
+    height: 170px;
+}
+
+.h2{
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    color: var(--cor3);
+}
+
+div P{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.35;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    min-height: 25px;
+    padding-top: 10px;
+    margin-top: 27px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
